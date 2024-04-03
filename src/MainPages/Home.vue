@@ -1,4 +1,8 @@
 <template>
-  <div>dawdawdad HOOOMMEEEE</div>
+  <div>
+    <NavBar />
+  </div>
 </template>
-<script></script>
+<script setup>
+import NavBar from "../components/NavBar.vue";
+</script>
