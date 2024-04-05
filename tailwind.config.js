@@ -5,14 +5,13 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.js",
   ],
+  plugins: [require("flowbite/plugin")],
   theme: {
     extend: {
       colors: {
-        primary: "#446063", //lighter color
-        secondary: "#7F1D1D", //dark color
+        primary: "#192d50", //lighter color
+        secondary: "#f0f3fb", //dark color
         ternary: "#996515", //darker color
-        // active: "#E5E5E5",
-        // stroke: "#818589",
       },
       fontFamily: {
         poppins: ["Poppins"],
@@ -22,7 +21,6 @@ export default {
         300: 300,
         400: 400,
       },
-      plugins: [require("flowbite/plugin")],
     },
   },
   plugins: [],

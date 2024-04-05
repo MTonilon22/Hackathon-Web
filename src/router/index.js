@@ -6,19 +6,10 @@ const router = createRouter({
     //LOGIN PERSON TYPE
     {
       path: "/",
-      name: "LoginStudent",
-      component: () => import("../MainPages/LoginStudent.vue"),
+      name: "LoginPage",
+      component: () => import("../MainPages/LoginPage.vue"),
     },
-    {
-      path: "/instructor",
-      name: "LoginInstructor",
-      component: () => import("../MainPages/LoginInstructor.vue"),
-    },
-    {
-      path: "/admin",
-      name: "LoginAdmin",
-      component: () => import("../MainPages/LoginAdmin.vue"),
-    },
+
     {
       path: "/home",
       name: "Home",
@@ -26,8 +17,14 @@ const router = createRouter({
     },
 
     {
+      path: "/admin",
+      name: "Admin",
+      component: () => import("../MainPages/Administrator.vue"),
+    },
+
+    {
       path: "/teamlead",
-      name: "Home",
+      name: "TeamLead",
       component: () => import("../MainPages/TeamLead.vue"),
     },
   ],
