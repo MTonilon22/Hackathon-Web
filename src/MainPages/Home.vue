@@ -1,5 +1,10 @@
 <template>
-  <NavBar />
+  <NavBar
+    firstLabel="DummyLabel"
+    secondLabel="DummyLabel"
+    thirdLabel="DummyLabel"
+    fourthLabel="DummyLabel"
+  />
   <div>dadaddadadad</div>
 </template>
 <script setup>

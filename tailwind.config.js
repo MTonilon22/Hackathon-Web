@@ -11,7 +11,7 @@ export default {
       colors: {
         primary: "#192d50", //lighter color
         secondary: "#f0f3fb", //dark color
-        ternary: "#996515", //darker color
+        ternary: "#FFB404", //darker color
       },
       fontFamily: {
         poppins: ["Poppins"],

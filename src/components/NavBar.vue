@@ -4,13 +4,10 @@
       <div class="w-[100%] h-[100px] flex flex-row items-center justify-center">
         <div class="w-[50%] flex items-center justify-evenly">
           <div class="text-secondary font-semibold text-xl cursor-pointer">
-            Lorem, ipsum.
+            {{ firstLabel }}
           </div>
           <div class="text-secondary font-semibold text-xl cursor-pointer">
-            Lorem, ipsum.
-          </div>
-          <div class="text-secondary font-semibold text-xl cursor-pointer">
-            Lorem, ipsum.
+            {{ secondLabel }}
           </div>
         </div>
         <div class="mt-[5%] absolute animate-spin">
@@ -27,13 +24,10 @@
         </div>
         <div class="w-[50%] flex items-center justify-evenly">
           <div class="text-secondary font-semibold text-xl cursor-pointer">
-            Lorem, ipsum.
+            {{ thirdLabel }}
           </div>
           <div class="text-secondary font-semibold text-xl cursor-pointer">
-            Lorem, ipsum.
-          </div>
-          <div class="text-secondary font-semibold text-xl cursor-pointer">
-            Lorem, ipsum.
+            {{ fourthLabel }}
           </div>
         </div>
       </div>
@@ -41,4 +35,13 @@
   </nav>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    firstLabel: String,
+    secondLabel: String,
+    thirdLabel: String,
+    fourthLabel: String,
+  },
+};
+</script>
