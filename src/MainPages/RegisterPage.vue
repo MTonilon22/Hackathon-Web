@@ -24,7 +24,22 @@
                   <label
                     for="email"
                     class="block mb-2 text-sm font-medium text-secondary"
-                    >Your Username</label
+                    >Name</label
+                  >
+                  <input
+                    type="username"
+                    name="email"
+                    id="email"
+                    class="bg-gray-50 border font-500 border-gray-300 text-primary sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:text-primary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Michael Tonilon"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-secondary"
+                    >Username</label
                   >
                   <input
                     type="username"
@@ -35,11 +50,27 @@
                     required=""
                   />
                 </div>
+
                 <div>
                   <label
                     for="password"
                     class="block mb-2 text-sm font-medium text-secondary"
                     >Password</label
+                  >
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="••••••••"
+                    class="bg-gray-50 border font-500 border-gray-300 text-primary sm:text-sm rounded-lg focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-primary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <label
+                    for="password"
+                    class="block mb-2 text-sm font-medium text-secondary"
+                    >Confirm Password</label
                   >
                   <input
                     type="password"
