@@ -3,7 +3,7 @@
     <!-- <div><NavBarLanding firstLabel="PointQuest" /></div> -->
 
     <div
-      class="items-center justify-center flex custom-sm:flex custom-sm:flex-col "
+      class="items-center justify-center flex custom-sm:flex custom-sm:flex-col"
     >
       <div
         class="items-center justify-center mx-auto flex text-secondary font-semibold tracking-widest"
@@ -13,7 +13,7 @@
       <div class="lg:w-[100%] custom-sm:w-[100%] mt-[18%]">
         <div class="flex flex-col mx-auto custom-sm:w-[100%]">
           <div class="w-[100%] rounded-2xl sm:max-w-md xl:p-0">
-            <div class="custom-sm:px-5 lg:p-3 space-y-4 custom-sm:w-[100%] flex justify-center items-center">
+            <div class="custom-sm:px-5 lg:p-3 space-y-4 custom-sm:w-[100%]">
               <h1
                 class="w-[100%] font-semibold leading-tight tracking-wide custom-sm:text-2xl lg:text-3xl text-secondary md:text-2xl mb-2"
               >
