@@ -19,14 +19,15 @@
               >
                 <span class="text-ternary tracking-wide">Login Account</span>
               </h1>
-              <form class="space-y-4 md:space-y-6" action="#">
+              <div class="space-y-4 md:space-y-6" action="#">
                 <div>
                   <label
                     for="email"
                     class="block mb-2 text-sm font-medium text-secondary"
-                    >Your Username</label
+                    >Username</label
                   >
                   <input
+                  v-model="username"
                     type="username"
                     name="email"
                     id="email"
@@ -42,6 +43,7 @@
                     >Password</label
                   >
                   <input
+                  v-model="password"
                     type="password"
                     name="password"
                     id="password"
@@ -66,19 +68,19 @@
                         >Remember me</label
                       >
                     </div>
+                    
                   </div>
                   <a href="#" class="text-sm text-ternary hover:underline"
                     >Forgot password?</a
                   >
                 </div>
-                <router-link to="/home">
-                  <button
+                  <button 
+                    @click="login"
                     type="submit"
                     class="w-[30%] btn transition duration-300 mt-8 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
                   >
                     Sign in
                   </button>
-                </router-link>
 
                 <p class="text-sm font-light text-secondary">
                   Don’t have an account yet?
@@ -89,7 +91,7 @@
                     >
                   </router-link>
                 </p>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -103,4 +105,36 @@
 import NavBarLanding from "../components/NavBarLanding.vue";
 import Footer from "../components/Footer.vue";
 import image from "../assets/register.png";
+import {ref} from "vue";
+import {useRouter} from "vue-router"
+
+const username = ref();
+const password = ref();
+const router = useRouter();
+
+const login = async () =>{
+  try{
+    const response = await fetch ('http://localhost:8080/getUsers');
+    const data = await response.json();
+    for(var i = 0 ; i < data.length;i++){
+      if(data[i].username==username.value){
+        if(data[i].password == password.value){
+          router.push('/home');
+        }
+        else{
+          
+        }
+      }
+      else{
+        
+      }
+    }
+
+
+  }
+  catch(error){
+    console.log(error);
+  }
+}
+
 </script>
