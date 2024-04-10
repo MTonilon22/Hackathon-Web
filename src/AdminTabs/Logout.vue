@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="flex w-full p-40 pr-96 pl-96 rounded-lg">
-      <div class="h-[600px] w-full rounded-lg p-5">
+    <div class="flex w-full p-40 pr-96 pl-96 rounded-md">
+      <div class="h-[600px] w-full rounded-md p-5">
         <div class="w-[100%] h-[45%] flex items-center justify-center mt-5">
           <img
             :src="logoutimage"

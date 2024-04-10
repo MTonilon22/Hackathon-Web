@@ -6,6 +6,11 @@ const router = createRouter({
     //LOGIN PERSON TYPE
     {
       path: "/",
+      name: "LandingPage",
+      component: () => import("../MainPages/LandingPage.vue"),
+    },
+    {
+      path: "/login",
       name: "LoginPage",
       component: () => import("../MainPages/LoginPage.vue"),
     },

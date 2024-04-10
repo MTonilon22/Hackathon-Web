@@ -53,7 +53,7 @@
     <div class="w-[80%] p-5">
       <!-- User Information -->
       <div class="h-[11.5%] w-full pb-5">
-        <div class="flex w-full h-full bg-white rounded-lg shadow-xl">
+        <div class="flex w-full h-full bg-white rounded-md shadow-xl">
           <div class="w-[77%] p-3">
             <div
               class="w-[100%] h-full rounded-xl text-primary font-semibold text-4xl flex items-center justify-start"

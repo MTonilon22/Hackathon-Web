@@ -125,7 +125,7 @@
               <div class="flex items-center justify-center w-[150px]">
                 <label
                   for="dropzone-file"
-                  class="flex flex-col items-center text-center justify-center w-full h-22 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                  class="flex flex-col items-center text-center justify-center w-full h-22 border-2 border-gray-300 border-dashed rounded-md cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
                 >
                   <div
                     class="flex flex-col items-center justify-center pt-5 pb-6"
@@ -163,7 +163,7 @@
           </form>
         </div>
         <!-- User Tables Below -->
-        <div class="rounded-lg mt-[3%] mx-auto">
+        <div class="rounded-md mt-[3%] mx-auto">
           <table
             class="w-[800px] ml-[-1%] mx-auto text-sm text-left rtl:text-right text-secondary border-2 border-ternary"
           >
