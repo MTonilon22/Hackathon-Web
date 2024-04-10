@@ -78,7 +78,7 @@
                   type="submit"
                   class="w-[30%] btn transition duration-300 mt-8 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
                 >
-                  Sign in
+                  Login
                 </button>
 
                 <p class="text-sm font-light text-secondary">
