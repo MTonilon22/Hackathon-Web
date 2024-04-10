@@ -32,6 +32,11 @@ const router = createRouter({
       name: "TeamLead",
       component: () => import("../MainPages/TeamLead.vue"),
     },
+    {
+      path: "/SendMail",
+      name: "SendMail",
+      component: () => import("../MainPages/SendMail.vue"),
+    },
   ],
 });
 export default router;

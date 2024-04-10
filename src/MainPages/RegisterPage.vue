@@ -4,7 +4,7 @@
 
     <div class="w-[100%] items-center justify-center flex h-[700px]">
       <div class="w-[40%] ml-[5%] text-primary font-semibold tracking-widest">
-        <img :src="image" class="w-[100%] h-[100%] float-anim" />
+        <img :src="imageR" class="w-[100%] h-[100%] float-anim" />
       </div>
       <div class="w-[40%] ml-[10%]">
         <div
@@ -19,7 +19,7 @@
               >
                 <span class="text-ternary tracking-wide">Register Account</span>
               </h1>
-              <form class="space-y-4 md:space-y-6" action="#">
+              <div class="space-y-4 md:space-y-6" action="#">
                 <div class="flex flex-row gap-5">
                   <div>
                     <label
@@ -28,6 +28,7 @@
                       >Name</label
                     >
                     <input
+                      v-model="name"
                       type="username"
                       name="email"
                       id="email"
@@ -43,6 +44,7 @@
                       >Username</label
                     >
                     <input
+                      v-model="username"
                       type="username"
                       name="email"
                       id="email"
@@ -59,6 +61,7 @@
                     >Email</label
                   >
                   <input
+                    v-model="email"
                     type="email"
                     name="email"
                     id="email"
@@ -75,6 +78,7 @@
                     >Password</label
                   >
                   <input
+                  v-model="password"
                     type="password"
                     name="password"
                     id="password"
@@ -90,6 +94,7 @@
                     >Confirm Password</label
                   >
                   <input
+                  v-model="confirm"
                     type="password"
                     name="password"
                     id="password"
@@ -98,6 +103,8 @@
                     required=""
                   />
                 </div>
+                <input type="file" @change="handleFileImage">
+
                 <div class="flex items-center justify-between">
                   <div class="flex items-start">
                     <div class="flex items-center h-5">
@@ -119,14 +126,13 @@
                     >Forgot password?</a
                   >
                 </div>
-                <router-link to="/home">
-                  <button
+                  <button 
+                  @click="register"
                     type="submit"
                     class="w-[30%] btn transition duration-300 mt-8 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
                   >
                     Register
                   </button>
-                </router-link>
 
                 <p class="text-sm font-light text-secondary">
                   Already have an account?
@@ -137,7 +143,7 @@
                     >
                   </router-link>
                 </p>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -149,5 +155,48 @@
 <script setup>
 import NavBarLanding from "../components/NavBarLanding.vue";
 import Footer from "../components/Footer.vue";
-import image from "../assets/register.png";
+import imageR from "../assets/register.png";
+import axios from "axios";
+import {ref, onMounted} from "vue";
+
+const name = ref();
+const username = ref();
+const password = ref();
+const confirm = ref();
+const email = ref();
+const image = ref(null);
+
+
+
+const register = async ()=>{
+  try{
+    console.log('done');
+
+    const formData = new FormData();
+    formData.append('name',name.value);
+    formData.append('username',username.value);
+    formData.append('password',password.value);
+    formData.append('email',email.value);
+    formData.append('role','user');
+    formData.append('image',image.value);
+
+    await axios.post("http://localhost:8080/addUser",formData,{
+      headers: {
+      "Content-Type" : "multipart/form-data",
+        },
+      });
+  }catch(error){
+    console.log("ERror: ",error);
+  }
+};
+
+
+
+
+const handleFileImage = (event) => {
+  const file = (event.target.files || [])[0];
+
+    image.value = file;
+};
+
 </script>
