@@ -4,7 +4,7 @@
 
     <div class="w-[100%] items-center justify-center flex h-[700px]">
       <div class="w-[40%] ml-[5%] text-primary font-semibold tracking-widest">
-        <img :src="image" class="w-[100%] h-[100%]" />
+        <img :src="image" class="w-[100%] h-[100%] float-anim" />
       </div>
       <div class="w-[40%] ml-[10%]">
         <div
@@ -74,7 +74,7 @@
                 <router-link to="/home">
                   <button
                     type="submit"
-                    class="w-[30%] mt-8 text-p text-primary font-bold hover:text-secondary bg-primary-600 hover:bg-ternary focus:ring-primary-300 rounded-lg text-sm px-5 py-2.5 text-center bg-secondary"
+                    class="w-[30%] btn transition duration-300 mt-8 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
                   >
                     Sign in
                   </button>
