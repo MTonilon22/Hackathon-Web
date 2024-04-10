@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-primary z-10 sticky">
+  <!-- <nav class="bg-primary z-10 sticky">
     <div class="flex flex-row items-center justify-center mx-auto">
       <div class="w-[100%] h-[100px] flex flex-row items-center justify-center">
         <div
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav> -->
 </template>
 
 <script setup></script>

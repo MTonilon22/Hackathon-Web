@@ -13,6 +13,9 @@ export default {
         secondary: "#f0f3fb", //dark color
         ternary: "#FFB404", //darker color
       },
+      screens: {
+        "custom-sm": { max: "640px" }, //Custom breakpoint for 640px and below..hehehe
+      },
       fontFamily: {
         poppins: ["Poppins"],
       },

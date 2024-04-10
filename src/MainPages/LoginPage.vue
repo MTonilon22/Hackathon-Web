@@ -1,25 +1,32 @@
 <template>
   <div>
-    <div><NavBarLanding firstLabel="PointQuest" /></div>
+    <!-- <div><NavBarLanding firstLabel="PointQuest" /></div> -->
 
-    <div class="w-[100%] items-center justify-center flex h-[700px]">
-      <div class="w-[40%] ml-[5%] text-secondary font-semibold tracking-widest">
-        <img :src="image" class="w-[100%] h-[100%] float-anim" />
+    <div
+      class="items-center justify-center flex custom-sm:flex custom-sm:flex-col "
+    >
+      <div
+        class="items-center justify-center mx-auto flex text-secondary font-semibold tracking-widest"
+      >
+        <!-- <img :src="image" class="lg:w-[50%] lg:h-[100%] float-anim mt-[3%]" /> -->
       </div>
-      <div class="w-[40%] ml-[10%]">
-        <div
-          class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
-        >
-          <div
-            class="w-full rounded-2xl shadow dark:border md:mt-0 sm:max-w-md xl:p-0 bg-primary"
-          >
-            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+      <div class="lg:w-[100%] custom-sm:w-[100%] mt-[18%]">
+        <div class="flex flex-col mx-auto custom-sm:w-[100%]">
+          <div class="w-[100%] rounded-2xl sm:max-w-md xl:p-0">
+            <div class="custom-sm:px-5 lg:p-3 space-y-4 custom-sm:w-[100%] flex justify-center items-center">
               <h1
-                class="text-lg font-semibold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-secondary mb-10"
+                class="w-[100%] font-semibold leading-tight tracking-wide custom-sm:text-2xl lg:text-3xl text-secondary md:text-2xl mb-2"
               >
-                <span class="text-ternary tracking-wide">Login Account</span>
+                Welcome to
+                <span
+                  class="text-ternary tracking-wide custom-sm:text-2xl custom-sm:w-[100%] lg:text-3xl"
+                  >PointQuest!</span
+                >
               </h1>
-              <div class="space-y-4 md:space-y-6" action="#">
+              <p1 class="text-secondary custom-sm:text-sm tracking-wide"
+                >To login, please enter your credentials.</p1
+              >
+              <div class="space-y-5 lg:w-[90%]" action="#">
                 <div>
                   <label
                     for="email"
@@ -31,7 +38,7 @@
                     type="username"
                     name="email"
                     id="email"
-                    class="bg-primary border font-500 border-secondary text-secondary sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-primary border font-500 border-secondary text-secondary text-sm sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="MTonilon22"
                     required=""
                   />
@@ -48,7 +55,7 @@
                     name="password"
                     id="password"
                     placeholder="••••••••"
-                    class="bg-primary border font-500 border-secondary text-secondary sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-primary border font-500 border-secondary text-secondary sm:text-sm text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     required=""
                   />
                 </div>
@@ -69,27 +76,31 @@
                       >
                     </div>
                   </div>
-                  <a href="#" class="text-sm text-ternary hover:underline"
-                    >Forgot password?</a
-                  >
+                  <div class="">
+                    <a
+                      href="#"
+                      class="text-sm text-ternary hover:underline items-center flex justify-center"
+                      >Forgot password?</a
+                    >
+                  </div>
                 </div>
                 <button
                   @click="login"
                   type="submit"
-                  class="w-[30%] btn transition duration-300 mt-8 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
+                  class="w-[100%] btn transition duration-300 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
                 >
                   Login
                 </button>
-
-                <p class="text-sm font-light text-secondary">
-                  Don’t have an account yet?
-                  <router-link to="/register">
-                    <a
-                      class="font-medium text-ternary hover:underline -500 cursor-pointer"
-                      >Register</a
-                    >
-                  </router-link>
-                </p>
+                <div class="flex flex-row lg:gap-16 custom-sm:gap-12">
+                  <p class="text-sm font-light text-secondary">
+                    Don’t have an account yet?
+                  </p>
+                  <div
+                    class="font-500 text-sm text-ternary hover:underline cursor-pointer"
+                  >
+                    <router-link to="/register"> Register </router-link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -101,7 +112,7 @@
 </template>
 
 <script setup>
-import NavBarLanding from "../components/NavBarLanding.vue";
+// import NavBarLanding from "../components/NavBarLanding.vue";
 import Footer from "../components/Footer.vue";
 import image from "../assets/register.png";
 import { ref } from "vue";
