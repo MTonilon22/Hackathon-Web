@@ -20,33 +20,50 @@
                 <span class="text-ternary tracking-wide">Register Account</span>
               </h1>
               <form class="space-y-4 md:space-y-6" action="#">
-                <div>
-                  <label
-                    for="email"
-                    class="block mb-2 text-sm font-medium text-secondary"
-                    >Name</label
-                  >
-                  <input
-                    type="username"
-                    name="email"
-                    id="email"
-                    class="bg-gray-50 border font-500 border-gray-300 text-primary sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:text-primary dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Michael Tonilon"
-                    required=""
-                  />
+                <div class="flex flex-row gap-5">
+                  <div>
+                    <label
+                      for="email"
+                      class="block mb-2 text-sm font-medium text-secondary"
+                      >Name</label
+                    >
+                    <input
+                      type="username"
+                      name="email"
+                      id="email"
+                      class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Michael Tonilon"
+                      required=""
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block mb-2 text-sm font-medium text-secondary"
+                      >Username</label
+                    >
+                    <input
+                      type="username"
+                      name="email"
+                      id="email"
+                      class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="MTonilon22"
+                      required=""
+                    />
+                  </div>
                 </div>
                 <div>
                   <label
                     for="email"
                     class="block mb-2 text-sm font-medium text-secondary"
-                    >Username</label
+                    >Email</label
                   >
                   <input
-                    type="username"
+                    type="email"
                     name="email"
                     id="email"
-                    class="bg-gray-50 border font-500 border-gray-300 text-primary sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:text-primary dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="MTonilon22"
+                    class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="mtonilon17@gmail.com"
                     required=""
                   />
                 </div>
@@ -62,7 +79,7 @@
                     name="password"
                     id="password"
                     placeholder="••••••••"
-                    class="bg-gray-50 border font-500 border-gray-300 text-primary sm:text-sm rounded-lg focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-primary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-lg focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     required=""
                   />
                 </div>
@@ -77,7 +94,7 @@
                     name="password"
                     id="password"
                     placeholder="••••••••"
-                    class="bg-gray-50 border font-500 border-gray-300 text-primary sm:text-sm rounded-lg focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-primary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-lg focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     required=""
                   />
                 </div>
@@ -88,13 +105,13 @@
                         id="remember"
                         aria-describedby="remember"
                         type="checkbox"
-                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50"
+                        class="w-4 h-4 border border-gray-300 rounded bg-primary"
                         required=""
                       />
                     </div>
                     <div class="ml-3 text-sm">
                       <label for="remember" class="text-secondary"
-                        >Remember me</label
+                        >Terms and Conditions</label
                       >
                     </div>
                   </div>
