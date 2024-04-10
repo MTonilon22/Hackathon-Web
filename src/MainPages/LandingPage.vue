@@ -24,6 +24,7 @@
         nesciunt, saepe exercitationem, voluptatibus aspernatur inventore
         molestias atque minus dolores sequi, voluptatem voluptate?
       </p>
+      <!-- Open the modal using ID.showModal() method -->
 
       <p
         class="lg:text-md text-secondary font-normal lg:tracking-widest md:tracking-widest sm:tracking-wider cs:tracking-wide text-center md:text-lg cs:text-sm sm:text-md cs:w-[80%]"
